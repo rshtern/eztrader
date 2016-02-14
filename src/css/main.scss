@@ -1,0 +1,795 @@
+/* main.css */ 
+
+
+/*colors */
+$ezBlue: #1c45ad;
+$ezYellow: #fce200;
+$ezLightGray: #cbcbcb;
+$ezGray: #8a8a8a;
+$ezBlack: #111316;
+$ezBlackBlue: #111316;
+
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@font-face {
+    font-family: 'eztrader-icons';
+    src:    url('../fonts/eztrader-icons.eot?zh7zae');
+    src:    url('../fonts/eztrader-icons.eot?zh7zae#iefix') format('embedded-opentype'),
+        url('../fonts/eztrader-icons.ttf?zh7zae') format('truetype'),
+        url('../fonts/eztrader-icons.woff?zh7zae') format('woff'),
+        url('../fonts/eztrader-icons.svg?zh7zae#eztrader-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'eztrader-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter-square:before {
+    content: "\f081";
+}
+.icon-facebook-square:before {
+    content: "\f082";
+}
+.icon-google-plus-square:before {
+    content: "\f0d4";
+}
+.icon-youtube-square:before {
+    content: "\f166";
+}
+.icon-professional-icon:before {
+    content: "\e900";
+}
+.icon-hours-icon:before {
+    content: "\e901";
+}
+.icon-everton-logo:before {
+    content: "\e902";
+}
+.icon-graph-icon:before {
+    content: "\e903";
+}
+.icon-payouts-icon:before {
+    content: "\e904";
+}
+.icon-person-icon:before {
+    content: "\e905";
+}
+.icon-safe-icon:before {
+    content: "\e906";
+}
+.icon-secure-icon:before {
+    content: "\e907";
+}
+.icon-simple-icon:before {
+    content: "\e908";
+}
+.icon-speed-icon:before {
+    content: "\e909";
+}
+
+
+
+/* main styles */
+body, .container-fluid{
+	padding: 0;
+	
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+.row{
+	max-width: 100%;
+	margin: 0 2.5%;
+}
+a{
+	text-decoration: none;
+}
+.btn-primary {
+	    font-size: 35px;
+	    font-weight: 700;
+	    padding: 23px 32px;
+	    text-transform: uppercase;
+	    border: 0;
+	    outline: 0;
+}
+ul{
+	display: inline;
+	padding: 0;
+	margin: 0;		
+}
+ul.icons{
+	width: 100%;
+	text-align: center;
+	li{
+		list-style: none;
+		display: inline-block;
+		margin: 0 2%;
+		height: 120px;
+		width: 15%;
+		position: relative;
+		vertical-align: top;
+		p{
+			font-size: 18px;
+			font-weight: 100;
+			width: 100%;
+			/*position: absolute;
+			bottom: 0;*/
+		}
+		li:first-child{
+			margin-left: 0;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+		i{
+			font-size: 60px;
+		}
+	}
+	
+}
+section.header{
+	height: 840px;
+	width: 100%;
+	background: url('../img/soccer-player.jpg') no-repeat, #000;
+	background-position: -350px 0;
+	color: #fff;
+	padding-top: 24px;
+	text-align: center;
+}
+.heading h1{
+	font-size: 55px;
+	font-weight: 100;
+}
+.heading h3{
+	font-size: 34px;
+	font-weight: 700;
+}
+.splash {
+	h4{
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: 300;
+		width: 100%;
+		margin-bottom: 45px;
+		span{
+			color: $ezYellow;
+			font-weight: 700;
+		}
+	}
+	.video{
+		width: 100%;
+		height: auto;
+		border: 5px solid #fff;
+	}
+	.btn-primary {
+	    background: $ezYellow;
+	    color: #000;
+	    margin-top: 20px;
+		padding: 12px 13px;
+	}
+	.btn-primary:hover{
+		background: darken($ezYellow, 10%);
+	}
+}
+ul.head-logos{
+	display: inline-block;
+	margin: 10px auto 0;
+	height: 62px;
+	width: 300px;
+	position: relative;
+	li{
+		list-style-type: none;
+		display: inline-block;
+		position: absolute;
+
+	}
+	li:first-child{
+		border-right: 1px solid #fff;
+		top: 10px;
+		left: 0;
+		padding-right: 20px;
+	}
+	li:last-child{
+		width: 60px;
+		right: 10px;
+		top: 0; 
+	}
+
+}
+
+section.second{
+	height: 880px;
+	width: 100%;
+	position: relative;
+	background: $ezBlue;
+	color: #fff;
+	padding-top: 80px;
+	h3{
+		font-size: 35px;
+		font-weight: 700;
+		padding-top: 40px;
+	}
+	h4{
+		font-size: 21px;
+		font-weight: 100;
+		margin-bottom: 35px;
+	}
+	p{
+		font-size: 21px;
+		font-weight: normal;
+		margin-bottom: 38px;
+	}
+	a.btn-primary {
+	    background: #fff;
+	    color: $ezBlue;
+	}
+	.btn-primary:hover{
+		background: darken(#fff, 10%);
+	}
+	.infographics{
+	    margin: 90px 0;
+	}
+	.iphone{
+		position: absolute;
+		bottom: -155px;
+		width: 100%;
+		height: 248px;
+		z-index: 100;
+		background: url('../img/iphone.png') center center no-repeat;
+		background-size: contain; 
+	}
+	ul.icons{
+		height: 120px;
+		padding-top: 70px;
+		li{
+		    margin: 0 2%;
+		    p{
+		    	margin-top: 10px;
+		    }
+		}
+		li:hover i{
+			color: darken(#fff, 30%);
+		}
+	}
+}
+
+section.third{
+	height:805px;
+	width: 100%;
+	background: #fff;
+	color: $ezBlackBlue;
+	padding-top: 170px;
+	h1{
+		color: $ezBlue;
+		font-weight: 700;
+		font-size: 38px;
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	p{
+		font-size: 21px;
+		text-align: left;
+		padding-bottom: 25px;
+		margin: 0 auto;
+		em{
+			font-weight: 700;
+			font-style: normal;
+		}
+	}
+	.btn-primary {
+	    background: $ezBlue;
+	    color: #fff;
+	    padding-bottom: 25px;
+	    padding: 16px 23px;
+	}
+	.btn-primary:hover{
+		background: darken($ezBlue, 10%);
+	}
+	.infographics{
+		margin-top: 50px;
+	}
+	li:hover i{
+		color: #777;
+	}
+	li p{
+		font-weight: 300;
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+section.forth{
+	height: 430px;
+	width: 100%;
+	padding-top: 60px;
+	background: $ezBlack;
+	color: #fff;
+	text-align: left;
+	h4{
+		font-size: 21px;	
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	h2{
+		font-size: 38px;	
+		font-weight: 700;	
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 21px;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+	.btn-primary {
+	    background: $ezBlue;
+	    color: #fff;
+	}
+	.btn-primary:hover{
+		background: darken($ezBlue, 10%);
+	}
+	.yellow-shape{
+		background: $ezYellow;
+		width: 100%;
+		height: 210px;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		border-radius: 40px 0 40px 0;
+		.inner-text{
+			position: absolute;
+			right: 10px;
+			text-align: center;
+			h2{
+				font-size: 45px;
+				font-weight: 100;
+				color: #000;
+			}
+			h4{
+				font-weight: 500;
+				font-size: 25px;
+				color: $ezBlue;
+			}
+			p{
+				font-weight: 300;
+				font-size: 18px;
+				color: #000;
+
+			}
+		}
+		img{
+			position: absolute;
+		    top: 40px;
+		    left: -50px;
+		    width: 250px;
+		}
+	}
+}
+section.fifth{
+	width: 100%;
+	height: 292px;
+	background: url('../img/banner.jpg') right 100% no-repeat, #050505;
+}
+footer{
+	height: 380px;
+	width: 100%;
+	padding-top: 50px;
+	background: $ezBlackBlue;
+	color: $ezLightGray;
+	h4{
+		font-size: 25px;
+		color: #fff;
+	}
+	ul.media-icons{
+		li{
+			list-style: none;
+			display: inline-block;
+			a{
+				text-decoration: none;
+				font-size: 34px;
+				color: $ezGray;
+			}
+			a:hover{
+				color: $ezLightGray;
+			}
+		}
+	}
+	p{
+		width: 65%;
+		margin: 0 auto;
+		font-size: 13px;
+		font-weight: 100;
+		text-align: center;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1440px) { 
+	section.forth .yellow-shape{
+		width: 95%;
+		left: 50px;
+		img{
+			width: auto;
+			top: -40px;
+			left: -70px;
+		}
+		.inner-text{
+			right: 20px;
+		}
+	} 
+}
+@media (min-width: 992px) and (max-width: 1439px) {
+	.btn-primary{
+		font-size: 26px;
+		padding: 12px 23px;
+	}
+	section.header{
+		h1{
+			font-size: 50px;
+		}
+		h3{
+			font-size: 30px;
+		}
+		.splash h4{
+			font-size: 21px;
+		}
+	}
+	section.forth{
+		height: 500px;
+		.prize{
+		    margin-top: 60px;
+		    img{
+		    	position: absolute;
+			    top: 90px;
+			    left: -50px;
+			    width: 230px
+		    }
+		    .inner-text{
+		    	right: 20px;
+		    }
+		}
+	}
+	footer p{
+		width: 100%;
+	}
+}
+/* Large desktop */
+@media (min-width: 980px) and (max-width: 991px) { 
+	section.header{
+		background: #000;
+		.video{
+			border:0;
+		}
+	}
+	section.forth{
+		height: 740px;
+		.prize{
+		    margin-top: 60px;
+		    .inner-text{
+		    	right: 20px;
+		    }
+		}
+	}
+	footer p{
+		width: 100%;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.row{
+		margin: 0 auto;
+	}
+	section.header{
+		background: #000;
+		padding: 0;
+		margin: 0;
+		h1{
+			font-size: 45px;
+		}
+		.video{
+			border:0;
+		}
+	}
+	section.second{
+		padding-top: 0;
+		h3{
+			font-size: 28px;
+		}
+		p, h4{
+			font-size: 17px;
+		}
+		.tablet {
+			padding-top: 70px;
+			img{
+				width: 100%;
+			}
+		}
+		ul.icons li{
+			width: 25%;
+   			margin-top: 50px;
+		}
+	}
+	.iphone{
+		display: none;
+	}
+	section.third{
+		padding-top: 40px;
+		h1{
+			font-size: 34px;
+		}
+	}
+	section.forth{
+		height: 800px;
+		text-align: center;
+		.prize{
+			margin-top: 80px;
+			.yellow-shape {
+				width: 85%;
+				left: 80px;
+				img{
+					width: 48%;
+					top: -20px;
+					left: -60px;
+				}
+			}
+			.inner-text{
+				right: 35px;
+			}
+		}
+	}
+	footer p{
+		width: 100%;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.row{
+		margin: 0 auto;
+	}
+	.btn-primary{
+			font-size: 18px;
+	}
+	section.header{
+		background: #000;
+		padding: 0;
+		margin: 0;
+		h1{
+			font-size: 45px;
+		}
+		h3{
+			font-size: 22px;
+		}
+		h4{
+			font-size: 18px;
+		}
+		.video{
+			border:0;
+		}
+		
+	}
+	section.second{
+		padding-top: 0;
+		height: 1100px;
+		h3{
+			font-size: 28px;
+		}
+		p, h4{
+			font-size: 17px;
+		}
+		.tablet {
+			padding-top: 70px;
+			img{
+				width: 65%;
+			}
+		}
+		.infographics {
+			margin: 10px 0;
+		}
+		ul.icons li{
+			width: 30%;
+   			padding-top: 30px;
+   			i{
+   				font-size: 50px;
+   			}
+   			p{
+   				font-size: 16px;
+   			}
+		}
+	}
+	.iphone{
+		display: none;
+	}
+	section.third{
+		padding-top: 40px;
+		height: 930px;
+		h1{
+			font-size: 34px;
+		}
+	}
+	section.forth{
+		height: 554px;
+		text-align: center;
+		p, h4{
+			font-size: 16px;
+		}
+		h2{
+			font-size: 28px;
+		}
+		.prize{
+			margin-top: 40px;
+			.yellow-shape {
+				width: 100%;
+				border-radius: 0;
+				top: 0;
+				right: 0;
+				left: 0;
+				img{
+					display: none;
+				}
+			}
+			.inner-text{
+				position: relative;
+				right: auto;
+				left: auto;
+			}
+		}
+		
+	}
+	section.fifth{
+			height: 140px;
+    		background: url('../img/banner.jpg') right 100% no-repeat,#050505;
+			background-size: cover;
+	}
+	footer{
+		height: 420px;
+		p{
+			width: 100%;
+		}
+	} 
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+		.row{
+		margin: 0 auto;
+	}
+	.btn-primary{
+			font-size: 16px;
+	}
+	section.header{
+		height: 760px;
+		background: #000;
+		padding: 0;
+		margin: 0;
+		h1{
+			font-size: 38px;
+		}
+		h3{
+			font-size: 18px;
+		}
+		h4{
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+		.video{
+			border:0;
+		}
+		
+	}
+	section.second{
+		padding-top: 0;
+		height: 1050px;
+		h3{
+			font-size: 22px;
+		}
+		p, h4{
+			font-size: 13px;
+		}
+		.tablet {
+			padding-top: 50px;
+			img{
+				width: 65%;
+			}
+		}
+		.infographics {
+			margin: 10px 0;
+		}
+		ul.icons li{
+			width: 35%;
+   			padding-top: 30px;
+   			height: 160px;
+   			i{
+   				font-size: 50px;
+   			}
+   			p{
+   				font-size: 16px;
+   			}
+		}
+	}
+	.iphone{
+		display: none;
+	}
+	section.third{
+		padding-top: 40px;
+		height: 930px;
+		h1{
+			font-size: 22px;
+		}
+		p{
+			font-size: 16px;
+		}
+		ul.icons li{
+			width: 35%;
+		}
+	}
+	section.forth{
+		height: 554px;
+		text-align: center;
+		padding-top: 20px; 
+		p, h4{
+			font-size: 16px;
+		}
+		h2{
+			font-size: 28px;
+		}
+		.prize{
+			margin-top: 40px;
+			.yellow-shape {
+				height: 193px;
+				width: 100%;
+				border-radius: 0;
+				top: 0;
+				right: 0;
+				left: 0;
+				img{
+					display: none;
+				}
+			}
+			.inner-text{
+				position: relative;
+				right: auto;
+				left: auto;
+				h2{
+					font-size: 34px;
+				}
+				h4{
+					font-size: 18px;
+				}
+				p{
+					font-size: 16px;
+				}
+			}
+		}
+		
+	}
+	section.fifth{
+			height: 140px;
+    		background: url('../img/banner.jpg') right 100% no-repeat,#050505;
+			background-size: cover;
+	}
+	footer{
+		height: 460px;
+		padding-top: 20px; 
+		h4{
+			font-size: 18px;
+		}
+		p{
+			width: 100%;
+		}
+	} 
+}
